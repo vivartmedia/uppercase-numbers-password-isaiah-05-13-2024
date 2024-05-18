@@ -3,19 +3,19 @@
 import React from 'react'
 
 interface IChildProps {
-    changeText: (text: string) => void
+  changeTextProp: (text: string) => void
 }
 
-const InputComponenet = ({ changeText }: IChildProps) => {
+const InputComponenet = ({ changeTextProp }: IChildProps) => {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-            changeText(e.target.value);
+      changeTextProp(e.target.value);
     }
 
 
   return (
     <div>
-      <input type="text" onChange={handleChange} />
+      <input className='border-2 border-slate-500 shadow-md shadow-slate-300 rounded-md' type="text" onChange={handleChange} />
     </div>
   )
 }

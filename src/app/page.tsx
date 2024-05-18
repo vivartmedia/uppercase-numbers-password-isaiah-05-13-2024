@@ -1,8 +1,8 @@
 'use client'
 
-import Image from "next/image";
 import { useState } from "react";
 import InputComponenet from "./component/InputComponenet";
+
 
 //objective is to change text color on our Home Component with the Data from our child component
 
@@ -17,7 +17,7 @@ const changeTextFunc = (text: string) => {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <input type="text" onChange={(e) => setChangeText(e.target.value)} /> */}
 
-      <InputComponenet changeText = {changeTextFunc}/>
+      <InputComponenet changeTextProp = {changeTextFunc}/>
 
       <p>Password must contain
         <span style={{ color:  /[A-Z]/.test(changeText) ? 'blue' : 'red' }}> Uppercase, </span>
