@@ -12,7 +12,6 @@ export default function Home() {
 // const changeTextFunc = (text: string) => {
 //   setChangeText(text)
 // }
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       {/* <input type="text" onChange={(e) => setChangeText(e.target.value)} /> */}
